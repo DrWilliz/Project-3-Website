@@ -40,6 +40,7 @@ svg {
 
 body {
   background-color: var(--clr-dark-grey);
+  margin: 0;
 
 }
 
@@ -58,4 +59,22 @@ p {
   font-weight: var(--fw-reg);
   font-size: var(--fs-body);
   color: var(--clr-white);
+}
+
+.splash-art {
+  background-image: url(Images/Website-bg-new-blue-trim.svg);
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: 55% 90%;
+  height: 110vh;
+  width: 100%;
+}
+
+.footer-transition {
+  background-image: url(Images/Website-bg-footer-done.svg);
+  height: 30rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+
 }
