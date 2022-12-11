@@ -3,8 +3,27 @@
   --clr-gold: #AF8012;
   --clr-light-b: #4AE3FB;
   --clr-light-p: #DF2BDF;
-  --clr-white: #F5F5F5:
-  --font-family-primary:'Kanit', sans-serif;
+  --clr-white: #F5F5F5;
+  --ff-primary:'Kanit', sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-reg: 500;
+  --fw-bold: 800;
+
+  --fs-body: 1.5rem;
+  --fs-headl: 3.75rem;
+  --fs-subhead: 2.25rem;
+
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: 2rem;
+    --fs-headl: 4.5rem;
+    --fs-subhead: 3rem;
+  }
 }
 
 html,
@@ -22,4 +41,21 @@ svg {
 body {
   background-color: var(--clr-dark-grey);
 
+}
+
+h1 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-headl);
+  -webkit-text-stroke: 1px var(--clr-gold);
+  -webkit-text-fill-color: var(--clr-dark-grey);
+  text-align: center;
+
+}
+
+p {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-body);
+  color: var(--clr-white);
 }
