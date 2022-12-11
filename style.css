@@ -1,4 +1,25 @@
+:root {
+  --clr-dark-grey: #110F0F;
+  --clr-gold: #AF8012;
+  --clr-light-b: #4AE3FB;
+  --clr-light-p: #DF2BDF;
+  --clr-white: #F5F5F5:
+  --font-family-primary:'Kanit', sans-serif;
+}
+
+html,
 body {
-  background-color: #110F0F;
+  height: 100%;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: var(--clr-dark-grey);
 
 }
