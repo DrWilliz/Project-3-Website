@@ -16,9 +16,14 @@
   --fs-headl: 3.75rem;
   --fs-subhead: 2.25rem;
 
+
 }
 
-@media (min-width: 50em) {
+*{
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
   :root {
     --fs-body: 2rem;
     --fs-headl: 4.5rem;
@@ -61,11 +66,59 @@ p {
   color: var(--clr-white);
 }
 
+.nav-list {
+  display: none;
+  flex-direction: row;
+  grid-gap: 3rem;
+  justify-content: end;
+}
+
+
+header {
+  background-color: #010003;
+  padding: .5rem;
+  position: absolute;
+  width: 100%;
+}
+
+.main-header-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#burga {
+  width: 3.5rem;
+}
+
+.hidden {
+  display: none;
+}
+.logo {
+  display: inline-block;
+  width: 3rem;
+}
+
+@media (min-width: 600px) {
+  .nav-list {
+    display: flex;
+  }
+  #burga {
+    display: none;
+  }
+}
+
+.footer-content {
+  background-color: #010003;
+  margin: 0;
+  padding: 2rem;
+}
+
 .splash-art {
   background-image: url(Images/Website-bg-new-blue-trim.svg);
   background-repeat: no-repeat;
-  background-size: 250%;
-  background-position: 55% 90%;
+  background-size: cover;
+  background-position: 52% 90%;
   height: 110vh;
   width: 100%;
 }
@@ -76,5 +129,6 @@ p {
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+  background-position: center;
 
 }

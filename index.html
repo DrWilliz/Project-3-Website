@@ -10,22 +10,32 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <img src="Images/youkai-logo-white.svg" alt="Youkai logo calipgraphy">
+      <div class="main-header-inner">
+        <a href="#"class="logo">
+          <img src="Images/youkai-logo-gold.svg" alt="Youkai logo calipgraphy">
+        </a>
+        <nav class="main-navigation">
+          <img id="burga" onmousedown="toggleMenu()" src="Images/filler2.png" alt="">
+          <ul class="nav-list">
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Art and Animation</a></li>
+            <li><a href="#">Don't Contact Me</a></li>
+          </ul>
+          </nav>
       </div>
-      <nav class="main-navigation">
-        <ul class="nav-list">
+
+        <ul id="mobile-nav" class="hidden">
           <li><a href="#">Video</a></li>
           <li><a href="#">Music</a></li>
           <li><a href="#">Art and Animation</a></li>
           <li><a href="#">Don't Contact Me</a></li>
         </ul>
-      </nav>
     </header>
       <main>
         <!-- <img src="Images/Website-bg-new-blue.svg" alt="flat color image of Kayo and squared up humming nerd"> -->
         <div class="splash-art">
-          
+
         </div>
         <div>
           <h1>Brilliantly Injudicious</h1>
@@ -73,9 +83,24 @@
       <footer class>
         <div class="footer-transition">
         </div>
+        <div class="footer-content">
+
+
+        <p>BWAKH</p>
+        <p>BWAKH</p>
+        <p>BWAKH</p>
+        </div>
 
       </footer>
+      <script>
+        function toggleMenu (){
+          console.log("Hello World")
 
+          const nav = document.querySelector("#mobile-nav")
+
+          nav.classList.toggle("hidden")
+        }
+      </script>
 
   </body>
 </html>
