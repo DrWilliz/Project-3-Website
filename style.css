@@ -255,14 +255,14 @@ ul {
 
 header {
   background-color: #010003;
-  padding: .5rem;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
 .main-header-inner {
   display: flex;
   flex-direction: row;
+  padding: 0.5rem;
   justify-content: space-between;
   font-family: var(--ff-body);
   font-size: var(--fs-sm0l);
@@ -270,11 +270,15 @@ header {
 }
 
 .mobile-nav {
-  display: grid;
-  justify-content: end;
-  gap: .5em;
+  width: 10rem;
   font-family: var(--ff-body);
   font-size: var(--fs-sm0l);
+  position: absolute;
+  background-color: black;
+  margin: 0;
+  padding: 0 1em 1em;
+  top: 100%;
+  right: 0;
 }
 
 .mobile-nav a {
@@ -284,6 +288,7 @@ header {
 
 #burga {
   width: 3.5rem;
+  cursor: pointer;
 }
 
 .hidden {
@@ -310,7 +315,8 @@ header {
 }
 
 .footer-logo {
-  display: inline-block;
+  display: block;
+  margin-inline: auto;
   width: 5rem;
 
 }
