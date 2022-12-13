@@ -158,6 +158,10 @@ p {
   color: var(--clr-white);
 }
 
+ul {
+  list-style: none;
+}
+
 .nav-list {
   display: none;
   flex-direction: row;
@@ -177,6 +181,22 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm0l);
+  color: var(--clr-white);
+}
+
+.mobile-nav {
+  display: grid;
+  justify-content: end;
+  gap: .5em;
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm0l);
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--clr-white);
 }
 
 #burga {
@@ -209,7 +229,7 @@ header {
 .footer-logo {
   display: inline-block;
   width: 5rem;
-  
+
 }
 
 .contacts {
