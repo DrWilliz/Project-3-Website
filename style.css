@@ -111,44 +111,127 @@ max-width: 50rem;
 }
 
 .button {
-  border-radius: 100vmax;
-  padding: 0.5em 1em;
-  font-family: var(--ff-body);
-  font-weight: var(--fw-body);
-  color: black;
-  border-color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--clr-light-p);
+  border: 0.125em solid var(--clr-light-p);
+  text-decoration: none;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.25em hsl(0 0% 100% / 0.5), 0 0 1em var(--clr-light-p);
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-light-p), 0 0 0.5em 0 var(--clr-light-p);
+  position: relative;
+  transition: background-color 100ms linear;
+}
+
+.button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-light-p);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+  filter: blur(1.5em);
+  opacity: 0.7;
+
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-light-p);
+  opacity: 0;
   background-color: var(--clr-dark-grey);
-  transition: 0.1s;
+  z-index: -1;
+  transition: opacity 100ms linear;
+
 }
 
-
-#button1:hover {
-  color: var(--clr-light-p);
-  border-color: var(--clr-light-p);
+.button:hover::after {
+  opacity: .8;
 }
 
-#button2:hover {
+.button:hover,
+.button:focus {
+  background-color: var(--clr-light-p);
+  color: var(--clr-dark-grey);
+  text-shadow: none;
+
+}
+
+#button2 {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
   color: var(--clr-light-b);
-  border-color: var(--clr-light-b);
-  animation-name: button2;
+  border: 0.125em solid var(--clr-light-b);
+  text-decoration: none;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.25em hsl(0 0% 100% / 0.5), 0 0 1em var(--clr-light-b);
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-light-b), 0 0 0.5em 0 var(--clr-light-b);
+  position: relative;
+  transition: background-color 100ms linear;
+}
+
+#button2::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-light-b);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+  filter: blur(1.5em);
+  opacity: 0.7;
 
 }
 
-@keyframes button2 {
-  0% {color: :black;}
-  5% {color: var(--clr-light-b); }
-  25% {color: var(--clr-light-b); }
-  30% {color: :black;}
-  35% {color: var(--clr-light-b); }
-  40% {color: :black;}
-  45% {color: var(--clr-light-b); }
-  100% {color: var(--clr-light-b); }
+#button2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-light-b);
+  opacity: 0;
+  background-color: var(--clr-dark-grey);
+  z-index: -1;
+  transition: opacity 100ms linear;
 
 }
 
-#button3:hover {
-  color: var(--clr-light-p);
-  border-color: var(--clr-light-p);
+#button2:hover::after {
+  opacity: .8;
+}
+
+#button2:hover,
+#button2:focus {
+  background-color: var(--clr-light-b);
+  color: var(--clr-dark-grey);
+  text-shadow: none;
+
 }
 
 p {
