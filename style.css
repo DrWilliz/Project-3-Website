@@ -106,8 +106,21 @@ max-width: 50rem;
   font-family: var(--ff-heading);
   font-weight: var(--fw-bold);
   font-size: var(--fs-subhead);
-  -webkit-text-stroke: 1px var(--clr-light-p);
+  -webkit-text-stroke: 1px var(--clr-gold);
   -webkit-text-fill-color: var(--clr-dark-grey);
+}
+
+#bluebass {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#midi {
+  width: 25%;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
 }
 
 .button {
@@ -243,6 +256,7 @@ p {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .nav-list {
