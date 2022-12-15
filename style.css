@@ -83,8 +83,6 @@ max-width: 50rem;
 
 }
 
-#music-container {
-}
 
 #style1 {
   font-family: var(--ff-heading);
@@ -129,6 +127,12 @@ max-width: 50rem;
 
 #musicipedia {
   padding-top: 3rem;
+}
+
+#halp {
+
+  margin-left: auto;
+  width: 75%;
 }
 
 .button {
@@ -282,6 +286,7 @@ header {
   width: 100%;
 }
 
+
 .main-header-inner {
   display: flex;
   flex-direction: row;
@@ -310,7 +315,7 @@ header {
 }
 
 #burga {
-  width: 3.5rem;
+  width: 2.5rem;
   cursor: pointer;
 }
 
@@ -383,4 +388,8 @@ header {
   background-size: cover;
   background-position: center;
 
+}
+
+#depth {
+  width: 100%;
 }

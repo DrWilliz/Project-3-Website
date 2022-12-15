@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;800&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header-inner">
+        <a href="index.html"class="logo">
+          <img src="Images/logo-cali-white-hori.svg" alt="Youkai logo calipgraphy">
+        </a>
+        <nav class="main-navigation">
+          <img id="burga" onmousedown="toggleMenu()" src="Images/burga.svg" alt="">
+          <ul class="nav-list">
+            <li><a href="videography.html">Video</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="art.html">Art and Animation</a></li>
+            <li><a href="contact.html">Don't Contact Me</a></li>
+          </ul>
+          </nav>
+      </div>
+
+        <ul class="mobile-nav hidden">
+          <li><a href="videography.html">Video</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="art.html">Art and Animation</a></li>
+          <li><a href="contact.html">Don't Contact Me</a></li>
+        </ul>
+    </header>
+    <section class="container" id="content-music-container">
+      <div>
+        <h1>Music Production</h1>
+        <audio controls>
+          <source src="content/always_thank_the_busdriver.mp3" type="audio/MP3">
+        </audio>
+        <audio controls>
+          <source src="content/hit_the_floor.mp3" type="audio/MP3">
+        </audio>
+        <audio controls>
+          <source src="content/kayo_s_food_stall_BB_edition.mp3" type="audio/MP3">
+        </audio>
+        <audio controls>
+          <source src="content/drum_it_like_raindrops.mp3" type="audio/MP3">
+        </audio>
+        <audio controls>
+          <source src="content/project_2_song2.mp3" type="audio/MP3">
+        </audio>
+        <audio controls>
+          <source src="content/rock_instrumental.mp3" type="audio/MP3">
+        </audio>
+      </div>
+      </section>
+    <footer class>
+      <div class="footer-transition">
+      </div>
+      <div class="footer-content">
+        <div class="even-columns">
+          <div>
+            <a href="index.html"><img class="footer-logo"src="Images/youkai-logo-white.svg" alt=""></a>
+            <ul class="socials" role="list"alt="social links">
+              <li> <a href="#"> <img class="icon"src="Images/youtubelogo.svg" alt="youtube logo"> </a> </li>
+              <li> <a href="#"> <img class="icon"src="Images/instalogo.svg" alt="Instagram logo"> </a> </li>
+              <li> <a href="#"> <img class="icon"src="Images/twitterlogo.svg" alt="Twitter logo"> </a> </li>
+              <li> <a href="#"> <img class="icon"src="Images/tiktoklogo.svg" alt="TikTok logo"> </a></li>
+              <li> <a href="#"> <img class="icon"src="Images/fblogo.svg" alt="Facebook logo"> </a></li>
+            </ul>
+          </div>
+            <div>
+              <nav class="contacts">
+                <ul role="list">
+                  <li>+45 71 78 71 49</li>
+                  <li>xander_1999@yahoo.dk</li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+
+
+
+      </div>
+
+    </footer>
+    <script>
+      function toggleMenu (){
+        console.log("Hello World")
+
+        const nav = document.querySelector(".mobile-nav")
+
+        nav.classList.toggle("hidden")
+      }
+    </script>
+
+  </body>
+</html>
