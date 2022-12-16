@@ -451,3 +451,8 @@ header {
 .videoman {
   Border: 0;
 }
+
+#content-art-container {
+  display: flex;
+  grid-gap: 4rem;
+}
