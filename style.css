@@ -137,6 +137,7 @@ max-width: 50rem;
 
 .button {
   font-size: 1rem;
+  font-family: sans-serif;
   font-weight: bold;
   display: inline-block;
   cursor: pointer;
@@ -200,9 +201,10 @@ max-width: 50rem;
 #button2 {
   font-size: 1rem;
   font-weight: bold;
-  display: block;
-  margin-left: auto;
+  display: inline-block;
+  float: right;
   cursor: pointer;
+  text-align: right;
   background-color: transparent;
   color: var(--clr-light-b);
   border: 0.125em solid var(--clr-light-b);
@@ -216,6 +218,7 @@ max-width: 50rem;
   position: relative;
   transition: background-color 100ms linear;
 }
+
 
 #button2::before {
   pointer-events: none;
@@ -392,4 +395,59 @@ header {
 
 #depth {
   width: 100%;
+}
+
+.videoman {
+  width: 100%;
+  height: 33%;
+}
+
+#content-music-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+}
+
+#contentheadline {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-headl);
+  -webkit-text-stroke: 1px var(--clr-gold);
+  -webkit-text-fill-color: var(--clr-dark-grey);
+  text-align: center;
+}
+
+.socials2 {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+  padding-left: 2rem;
+
+}
+
+.icon2 {
+  width: 3rem;
+}
+
+.contacts2 {
+  color: var(--clr-white);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  padding: 2rem;
+}
+
+.socials2 a {
+  color: var(--clr-white);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  text-decoration: none;
+}
+
+.videoman {
+  Border: 0;
 }
