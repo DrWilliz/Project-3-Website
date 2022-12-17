@@ -78,7 +78,7 @@ h2 {
   font-weight: var(--fw-bold);
   font-size: var(--fs-headl);
   color: var(--clr-white);
-  -webkit-text-stroke: 1px var(--clr-dark-grey);
+  -webkit-text-stroke: 2px var(--clr-dark-grey);
   place-self: center;
   padding-bottom: 25rem;
 }
@@ -418,6 +418,8 @@ header {
   display: grid;
 }
 
+
+
 .footer-transition {
   background-image: url(Images/Website-bg-footer-done.svg);
   height: 20rem;
@@ -428,13 +430,25 @@ header {
 
 }
 
+@media (min-width: 800px) {
+  .footer-transition {
+    height: 30rem;
+  }
+}
+
 #depth {
   width: 100%;
 }
 
 .videoman {
   width: 100%;
-  height: 33%;
+  height: 17.5rem;
+}
+
+@media (min-width:800px) {
+  .videoman {
+    height: 25rem;
+  }
 }
 
 #content-music-container {
