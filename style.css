@@ -29,7 +29,7 @@
 @media (min-width: 600px) {
   :root {
     --fs-body: 2rem;
-    --fs-headl: 4.5rem;
+    --fs-headl: 5.5rem;
     --fs-subhead: 3rem;
     --fs-inter: 6.5rem;
   }
@@ -73,6 +73,16 @@ h2 {
   margin-bottom: 20rem;
 }
 
+#kayo {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-headl);
+  color: var(--clr-white);
+  -webkit-text-stroke: 1px var(--clr-dark-grey);
+  place-self: center;
+  padding-bottom: 25rem;
+}
+
 #about {
   padding: 1rem;
 }
@@ -80,6 +90,14 @@ h2 {
 .container {
 padding: 1rem;
 max-width: 50rem;
+
+}
+
+@media (min-width: 600px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 
@@ -123,6 +141,12 @@ max-width: 50rem;
   position: absolute;
   top: 17rem;
   left: 3rem;
+}
+
+@media (min-width: 600px) {
+  #midi {
+    top: 23rem;
+  }
 }
 
 #musicipedia {
@@ -294,6 +318,16 @@ header {
   display: flex;
   flex-direction: row;
   padding: 0.5rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm0l);
+  color: var(--clr-white);
+  text-decoration: none;
+}
+
+.nav-list a {
+  text-decoration: none;
   justify-content: space-between;
   font-family: var(--ff-body);
   font-size: var(--fs-sm0l);
@@ -381,6 +415,7 @@ header {
   background-position: 52% 90%;
   height: 110vh;
   width: 100%;
+  display: grid;
 }
 
 .footer-transition {
@@ -407,7 +442,14 @@ header {
   justify-content: center;
   text-align: center;
 
+}
 
+@media (min-width: 1000px) {
+  #about {
+    width: 62.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #contentheadline {
@@ -430,11 +472,17 @@ header {
 .icon2 {
   width: 3rem;
 }
+#contacth {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-body);
+  color: var(--clr-white);
+}
 
 .contacts2 {
   color: var(--clr-white);
   font-family: var(--ff-body);
-  font-size: var(--fs-body);
+  font-size: 0.825rem;
   display: flex;
   justify-content: left;
   text-align: left;
@@ -444,8 +492,14 @@ header {
 .socials2 a {
   color: var(--clr-white);
   font-family: var(--ff-body);
-  font-size: var(--fs-body);
+  font-size: 0.825rem;
   text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .socials2 a {
+    font-size: 1.25rem;
+  }
 }
 
 .videoman {
