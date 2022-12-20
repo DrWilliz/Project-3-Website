@@ -81,6 +81,7 @@ h2 {
   -webkit-text-stroke: 2px var(--clr-dark-grey);
   place-self: center;
   padding-bottom: 25rem;
+  text-align: center;
 }
 
 #ring {
